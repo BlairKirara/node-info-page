@@ -3,7 +3,7 @@ var { URL } = require('url');
 var fs = require('fs');
 
 http.createServer(function (req, res) {
-    var q = new URL(req.url, "https://blairkirara.github.io/");
+    var q = new URL(req.url, "https://blairkirara.github.io/node-info-page");
     var filename = "." + q.pathname + ".html";
     if (q.pathname === "/"){
         filename = "./index.html";
