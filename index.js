@@ -3,7 +3,7 @@ var { URL } = require('url');
 var fs = require('fs');
 
 http.createServer(function (req, res) {
-    var q = new URL(req.url, "http://localhost:8080");
+    var q = new URL(req.url, "https://blairkirara.github.io/");
     var filename = "." + q.pathname + ".html";
     if (q.pathname === "/"){
         filename = "./index.html";
